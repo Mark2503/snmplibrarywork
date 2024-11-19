@@ -1,0 +1,266 @@
+11.7.2023 14:55 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 14:57 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 14:57 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 14:58 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 14:59 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 14:59 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 15:0 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 15:0 - poll error: Traceback (most recent call last):
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dispatch.py", line 45, in runDispatcher
+    loop(timeout or self.getTimerResolution(),
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 207, in loop
+    poll_fun(timeout, map)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 150, in poll
+    read(obj)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 87, in read
+    obj.handle_error()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\asyncore.py", line 420, in handle_read_event
+    self.handle_read()
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\asyncore\dgram\base.py", line 170, in handle_read
+    self._cbFun(self, transportAddress, incomingMessage)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\carrier\base.py", line 84, in _cbFun
+    self.__recvCallables[recvId](
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\entity\engine.py", line 151, in __receiveMessageCbFun
+    self.msgAndPduDsp.receiveMessage(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\rfc3412.py", line 291, in receiveMessage
+    msgVersion = verdec.decodeMessageVersion(wholeMsg)
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pysnmp\proto\api\verdec.py", line 15, in decodeMessageVersion
+    seq, wholeMsg = decoder.decode(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 2003, in __call__
+    for asn1Object in streamingDecoder:
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1918, in __iter__
+    for asn1Object in self._singleItemDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 1778, in __call__
+    for value in concreteDecoder.valueDecoder(
+;  File "C:\Users\fmark\anaconda3\envs\snmplibrarywork\lib\site-packages\pyasn1\codec\ber\decoder.py", line 654, in valueDecoder
+    for chunk in substrateFun(asn1Object, substrate, length, options):
+;TypeError: <lambda>() takes 3 positional arguments but 4 were given
+caused by <class 'TypeError'>: <lambda>() takes 3 positional arguments but 4 were given
+11.7.2023 15:3 - ifOutOctets compilation error(s): missingcaused by <class 'pysnmp.smi.error.MibNotFoundError'>: MIB file "ifOutOctets.py[co]" not found in search path (DirMibSource('C:\\Users\\fmark\\anaconda3\\envs\\snmplibrarywork\\lib\\site-packages\\pysnmp\\smi\\mibs'), DirMibSource('C:\\Users\\fmark\\anaconda3\\envs\\snmplibrarywork\\lib\\site-packages\\pysnmp\\smi\\mibs\\instances'), DirMibSource('pysnmp_mibs'), DirMibSource('C:\\Users\\fmark\\PySNMP Configuration\\mibs'))caused by <class 'pyasn1.error.PyAsn1Error'>: Malformed Object ID ifOutOctets at ObjectName: invalid literal for int() with base 10: 'ifOutOctets'
+11.7.2023 15:7 - {'errorIndication': SerializationError('SNMP message serialization error')}
